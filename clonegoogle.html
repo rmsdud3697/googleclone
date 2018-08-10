@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <title>Google(clone)</title>
 <style>
+	body{
+		margin: 0;
+	}
 	.top-right{
 		text-align: right;
-		margin-right: 15px;
+		margin-right: 20px;
 	}
 	.gmail{
 		margin-right: 12px;
@@ -15,52 +18,111 @@
 		margin-right: 12px;
 	}
 	.login{
-		padding: 3px 7px 3px 7px;
+		padding: 5px 9px 5px 9px;
 		border: 1px solid #4B8CF4;
 		background-color: #4B8CF4;
 		color:white;
 		border-radius: 2px;
 	}
+	a{
+		text-decoration: none;
+		color: gray;
+	}
 	.logobox{
 		text-align: center;
 	}
 	.searchbox{
-		text-align: center;
+		
 	}
 	
 	.textbox{
 		text-align: center;
-		border: 1px solid black;
-		width: 600px;
-		height:40px;
+		border: 1px solid #D3D3D3;
+		width: 500px;
+		height: 46px;
+		left:0;
+		right:0;
+		margin-left:auto;
+		margin-right:auto;
+		vertical-align: middle;
+		box-shadow: 1px 5px 10px 1px #D3D3D3;
+		border-radius: 2px;
 	}
 	.text{
-
+		margin-top: 13px;
+		margin-right: 10px;
+		vertical-align: middle;
+		width: 400px;
+		border: none;
 	}
 	.logo{
 
-		width: 400px;
-		height: 200px;
+		width: 370px;
+		height: 180px;
 	}
 	.key{
-		width: 30px;
-		height: 30px;
+		vertical-align: middle;
+		margin-right: 10px;
+		margin-top: 5px;
+		width: 20px;
+		height: 23px;
+	 	
 
 	}
 	.mic{
-		width: 30px;
-		height: 30px;
+		vertical-align: middle;
+		margin-top: 5px;
+		width: 25px;
+		height: 25px;
+		
+	}
+	.twobox{
+		
+		margin-top: 35px;
+		text-align: center;
+	}
+	.one{
+		width: 110px;
+		height: 35px;
+		padding-bottom: 4px;
+		color: #696969;
+		background-color: #F5F5F5;
+		border: none;
+
+	}
+	.two{
+		padding-top: 6px;
+		padding-bottom: 6px;
+		width: 160px;
+		height: 35px;
+		color: #696969;
+		background-color: #F5F5F5;
+		border: none;
+	}
+	.footer{
+		 position: absolute;
+		 bottom: 0;
+		 width: 100%;
+		 height: 70px;   
+		 background: #F5F5F5;
 	}
 </style>
 </head>
 <body>
 	<div class="top-right">
-		<p>
-			<a class="gmail" href="https://www.google.com/gmail/" target="_blacnk">Gmail</a>
-			<a class ="img" href="https://www.google.co.kr/imghp?hl=ko" target="_blacnk">이미지</a>
-			<!-- 박스9개 -->
-			<span class="login">로그인</span>
-		</p>
+	<p>
+		<a class="gmail" href="https://www.google.com/gmail/" target="_blacnk">Gmail</a>
+		<a class ="img" href="https://www.google.co.kr/imghp?hl=ko" target="_blacnk">이미지</a>
+		<!-- 박스9개 -->
+
+			<input class="login" type="button" value="로그인" onclick="msg()">
+		
+		<script>
+			function msg() {
+				alert("로그인은 안돼요^^")
+			}
+		</script>
+	</p>
 	</div>
 	<br>
 	<br>
@@ -69,14 +131,38 @@
 	<div class="logobox">
 			<img class="logo" src="googlelogo.jpg">
 	</div>
-
 	<div class="searchbox">
 		<div class="textbox">
 			<input class="text"type="text" name="search">
 			<img class="key" src="key.jpg">
-			<img class="mic" src="mic.png">
-
+			<img class="mic" src="mic2.png">
 		</div>
+	</div>
+	<div class="twobox">
+		<input class="one" type="button" value="Google 검색">
+		<input class="two" type="button" value="I'm Feeling Lucky" onclick="location.href='https://www.google.com/doodles/'">
+	</div>
+
+	<div class="footer">
+		<div>대한민국</div>
+		<div>
+			<a href="https://ads.google.com/intl/ko_kr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">광고
+			</a>
+			<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">비즈니스
+			</a>
+			<a href="https://www.google.com/intl/ko_kr/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">Google 정보
+			</a>
+		</div>
+		<div>
+			<a href="https://policies.google.com/privacy?hl=ko&gl=kr">개인정보처리방침
+			</a>
+			<a href="https://policies.google.com/terms?hl=ko&gl=kr">약관
+			</a>
+			<a href="https://www.google.com/preferences?hl=ko&fg=1">설정
+			</a>
+		</div>
+			
+		
 	</div>
 		
 </body>
