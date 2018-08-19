@@ -29,6 +29,9 @@
 		color: #404040;
 		font-size: 13px;
 	}
+	a:hover {
+		text-decoration: underline;
+	}
 	.logobox{
 		text-align: center;
 	}
